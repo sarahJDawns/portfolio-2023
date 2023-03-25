@@ -3089,12 +3089,12 @@ body.is-ie .spotlights > section {
 }
 
 .spotlights > section > .image {
-  background-position: center center;
-  background-size: cover;
+  background-size: contain;
   border-radius: 0;
   display: block;
+  width: 40em;
   position: relative;
-  width: 100%;
+  background-repeat: space;
 }
 
 .spotlights > section > .image img {
@@ -3334,6 +3334,10 @@ table.alt tfoot {
 
 .wrapper.style3-alt {
   background-color: #953d75;
+}
+
+#bkgdColor {
+  background-color: #4c4eac;
 }
 
 .wrapper.fullscreen {
