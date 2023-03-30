@@ -6,6 +6,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* additional colors */
+
+.bkgdSpaced {
+  background-color: #4c4eac;
+}
+
+.bkgdMacro {
+  background-color: #5052be;
+}
+
 html,
 body,
 div,
@@ -3334,10 +3344,6 @@ table.alt tfoot {
 
 .wrapper.style3-alt {
   background-color: #953d75;
-}
-
-#bkgdColor {
-  background-color: #4c4eac;
 }
 
 .wrapper.fullscreen {
