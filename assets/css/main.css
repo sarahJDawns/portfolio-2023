@@ -8,12 +8,16 @@
 
 /* additional colors */
 
-.bkgdSpaced {
+#bkgdSpaced {
   background-color: #4c4eac;
 }
 
-.bkgdMacro {
+#bkgdMacro {
   background-color: #5052be;
+}
+
+#bkgdFortune {
+  background-color: #484aa3;
 }
 
 html,
