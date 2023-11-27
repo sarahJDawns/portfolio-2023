@@ -1,0 +1,19 @@
+---
+import Icon from "astro-icon";
+export interface Props {
+	tags?: string[];
+}
+
+const { tags } = Astro.props;
+---
+
+{
+	tags && (
+		<div class="w-full mt-2 flex flex-row flex-wrap">
+			{tags.map((tag) => (
+				
+				<span class="flex flex-row rounded p-1 text-xs text-secondtext font-heading lg:py-1"><Icon name="twemoji:eight-pointed-star" width="10" height="10" class="text-accent2 pt-1" />{tag}</span>
+			))}
+		</div>
+	)
+}

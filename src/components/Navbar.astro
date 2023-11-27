@@ -1,0 +1,38 @@
+---
+const menuitems = [
+  {
+    title: "About",
+    path: "#about",
+  },
+  {
+    title: "Projects",
+    path: "#projects",
+  },
+  {
+    title: "Contact",
+    path: "#contact",
+  },
+];
+---
+
+<header>
+  <nav class="bg-background border-b-2 border-y-accent mt-10">
+    <div class="flex items-center justify-center p-4 mx-auto">
+      <ul class="flex flex-row gap-10">
+        {
+          menuitems.map((item) => (
+            <li>
+              <a
+                aria-label="navigation link"
+                href={item.path}
+                class="flex py-1 uppercase font-body text-text font-bold hover:text-accent2 lg:px-3"
+              >
+                {item.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </nav>
+</header>

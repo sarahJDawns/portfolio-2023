@@ -1,0 +1,33 @@
+---
+import Button from "./ui/Button.astro";
+---
+
+<section
+  class="pt-48 mx-auto flex bg-background border-b-2 border-y-accent"
+>
+  <div class="mb-10 flex flex-col">
+    <div class="flex-col text-left">
+      <h1 class="mb-10 font-heading text-5xl text-text ">
+        Hi, I'm <span class="text-accent2">Sarah</span>
+      </h1>
+      <p class="mb-10 font-heading text-lg text-secondtext uppercase">
+        Your next web developer
+      </p>
+      <p class="mb-10 font-body text-md text-secondtext ">
+        I build websites and web applications for clients.
+      </p>
+    </div>
+    <div class="mb-10">
+      <Button
+        href="#projects"
+        target="_self"
+        style={"primary"}
+        size={"sm"}
+        class={"flex"}
+        name="projects"
+      >
+        Projects
+      </Button>
+    </div>
+  </div>
+</section> 
