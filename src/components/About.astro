@@ -4,28 +4,28 @@ import { Icon } from "astro-icon";
 
 <section
   id="about"
-  class="bg-background pt-20 pb-20 flex flex-col border-b-2 border-y-accent"
+  class="bg-background border-y-accent flex flex-col pt-20 pb-20 border-b-2"
 >
-  <div class="mb-5 flex flex-col">
-    <h2 class=" font-heading text-3xl text-text">About me</h2>
+  <div class="flex flex-col mb-5">
+    <h2 class="font-heading text-text text-3xl">About me</h2>
   </div>
   <div class="mb-10">
     <p
-      class="font-heading text-sm text-text uppercase border-b-2 border-y-accent2 inline-block"
+      class="font-heading text-text border-y-accent2 inline-block text-sm uppercase border-b-2"
     >
       I like to build things that solve problems.
     </p>
   </div>
-  <div class="flex flex-col md:flex-row justify-between">
-    <div class="pb-5 w-full flex align-center md:w-1/2 md:px-1">
+  <div class="md:flex-row flex flex-col justify-between">
+    <div class="align-center md:w-1/2 md:px-1 flex w-full pb-5">
       <Icon
         name="ion:diamond-outline"
         width="50"
         height="50"
         class="text-accent2"
       />
-      <div class="pl-5 w-full flex-col text-text">
-        <h3 class="mb-2 w-full text-lg text-text font-heading">
+      <div class="text-text flex-col w-full pl-5">
+        <h3 class="text-text font-heading w-full mb-2 text-lg">
           I love to work on new projects.
         </h3>
         <p class="text-secondtext font-body text-sm">
@@ -34,13 +34,13 @@ import { Icon } from "astro-icon";
         </p>
       </div>
     </div>
-    <div class="w-full flex align-center md:w-1/2 md:px-1">
+    <div class="align-center md:w-1/2 md:px-1 flex w-full">
       <Icon name="entypo:rocket" width="50" height="50" class="text-accent2" />
       <div
-        class="pl-5 w-full flex-col align-center text-justify text-lg text-text"
+        class="align-center text-text flex-col w-full pl-5 text-lg text-justify"
       >
         <h3
-          class="mb-2 w-full flex-col align-center text-justify text-text font-heading"
+          class="align-center text-text font-heading flex-col w-full mb-2 text-justify"
         >
           Technologies I've been working with recently:
         </h3>

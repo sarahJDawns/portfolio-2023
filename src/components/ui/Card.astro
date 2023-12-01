@@ -8,9 +8,9 @@ const projects = await getCollection("projects");
 
 {
   projects.map((project) => (
-    <section class="w-3/4 p-4 md:w-1/2">
-      <article class=" bg-accent1 p-3 ">
-        <div class="relative flex items-end overflow-hidden rounded-l duration-100 hover:scale-105 hover:transform">
+    <section class="md:w-1/2 w-3/4 p-4">
+      <article class=" bg-accent1 p-3">
+        <div class="hover:scale-105 hover:transform relative flex items-end overflow-hidden duration-100 rounded-l">
           <a href={project.data.urls.site} aria-label="link to project">
             <Image
               src={project.data.cover}
@@ -22,8 +22,8 @@ const projects = await getCollection("projects");
             />
           </a>
         </div>
-        <div class="mt-1 p-2">
-          <h3 class="mb-2 w-full text-xl text-text font-heading">
+        <div class="p-2 mt-1">
+          <h3 class="text-text font-heading w-full mb-2 text-xl">
             {project.data.title}
           </h3>
           <p class="text-secondtext font-body text-sm">{project.data.description}</p>
