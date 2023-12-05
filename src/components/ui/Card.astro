@@ -10,7 +10,7 @@ const projects = await getCollection("projects");
   projects.map((project) => (
     <section class="md:w-1/2 w-3/4 p-4">
       <article class=" bg-accent1 p-3">
-        <div class="hover:scale-105 hover:transform relative flex items-end overflow-hidden duration-100 rounded-l">
+        <div class="hover:scale-105 hover:transform relative flex items-end overflow-hidden duration-100">
           <a href={project.data.urls.site} aria-label="link to project">
             <Image
               src={project.data.cover}

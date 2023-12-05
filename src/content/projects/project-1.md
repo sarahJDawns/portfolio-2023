@@ -7,5 +7,5 @@ urls: {
   site: "https://yellow-book-garden-planner.onrender.com",
   github: "https://github.com/sarahJDawns/yellow-book-garden-planner"
 }
-tags: ['HTML', 'Tailwind CSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB', 'API', 'Drag & Drop']
+tags: ['HTML', 'TailwindCSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB', 'API', 'Drag & Drop']
 ---

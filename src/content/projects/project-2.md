@@ -7,5 +7,5 @@ urls: {
    site: "https://the-water-spigot.onrender.com",
   github: "https://github.com/sarahJDawns/water-spigot-social"
 }
-tags: ['HTML', 'Tailwind CSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB']
+tags: ['HTML', 'TailwindCSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB']
 ---
