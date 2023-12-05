@@ -2,6 +2,8 @@
 
 ## To Showcase my recent and current projects
 
+![img](./src/assets/images/portfolio.png)
+
 ### Built With
 
 - ![HTML](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white)
