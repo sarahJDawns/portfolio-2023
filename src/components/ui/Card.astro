@@ -11,7 +11,17 @@ const projects = await getCollection("projects");
     <section class="md:w-1/2 w-3/4 p-4">
       <article class=" bg-accent1 p-3">
         <div class="hover:scale-105 hover:transform relative flex items-end overflow-hidden duration-100">
-          <a href={project.data.urls.site} aria-label="link to project">
+          {/* <a href={project.data.urls.site} aria-label="link to project">
+            <Image
+              src={project.data.cover}
+              alt={project.data.coverAlt}
+              format="png"
+              width={400}
+              height={400}
+              loading="eager"
+            />
+          </a> */}
+          <a href={project.data.urls.github} aria-label="link to project">
             <Image
               src={project.data.cover}
               alt={project.data.coverAlt}
@@ -26,11 +36,13 @@ const projects = await getCollection("projects");
           <h3 class="text-text font-heading w-full mb-2 text-xl">
             {project.data.title}
           </h3>
-          <p class="text-secondtext font-body text-sm">{project.data.description}</p>
+          <p class="text-secondtext font-body text-sm">
+            {project.data.description}
+          </p>
           <Tags tags={project.data.tags} />
         </div>
         <div class="flex flex-row justify-start gap-4">
-          <Button
+          {/* <Button
             target="_blank"
             href={project.data.urls.site}
             aria-label="link to project"
@@ -40,7 +52,7 @@ const projects = await getCollection("projects");
             name="projects"
           >
             Site
-          </Button>
+          </Button> */}
           <Button
             target="_blank"
             href={project.data.urls.github}

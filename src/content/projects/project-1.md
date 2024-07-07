@@ -4,7 +4,7 @@ description: Web app designed to streamline the gardening experience, providing 
 cover: "../../assets/images/yellowbookgardenplanner.png"
 coverAlt: image of yellow book garden planner web app
 urls: {
-  site: "https://yellow-book-garden-planner.onrender.com",
+  # site: "https://yellow-book-garden-planner.onrender.com",
   github: "https://github.com/sarahJDawns/yellow-book-garden-planner"
 }
 tags: ['HTML', 'TailwindCSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB', 'API', 'Drag & Drop']
