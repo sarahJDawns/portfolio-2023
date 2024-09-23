@@ -1,30 +1,33 @@
 ---
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
-import Tags from "../../components/ui/Tags.astro";
-import Button from "./Button.astro";
+import Tags from "./Tags.astro";
+import Button from "@components/ui/Button.astro";
+
 const projects = await getCollection("projects");
+const projectsData = projects.map(project => project.data)
+
 ---
 
 {
-  projects.map((project) => (
+  projectsData.map((project) => (
     <section class="md:w-1/2 w-3/4 p-4">
       <article class=" bg-accent1 p-3">
         <div class="hover:scale-105 hover:transform relative flex items-end overflow-hidden duration-100">
-          {/* <a href={project.data.urls.site} aria-label="link to project">
+          {/* <a href={project.urls.site} aria-label="link to project">
             <Image
-              src={project.data.cover}
-              alt={project.data.coverAlt}
+              src={project.cover}
+              alt={project.coverAlt}
               format="png"
               width={400}
               height={400}
               loading="eager"
             />
           </a> */}
-          <a href={project.data.urls.github} aria-label="link to project">
+          <a href={project.urls.github} aria-label="link to project">
             <Image
-              src={project.data.cover}
-              alt={project.data.coverAlt}
+              src={project.cover}
+              alt={project.coverAlt}
               format="png"
               width={400}
               height={400}
@@ -34,17 +37,17 @@ const projects = await getCollection("projects");
         </div>
         <div class="p-2 mt-1">
           <h3 class="text-text font-heading w-full mb-2 text-xl">
-            {project.data.title}
+            {project.title}
           </h3>
           <p class="text-secondtext font-body text-sm">
-            {project.data.description}
+            {project.description}
           </p>
-          <Tags tags={project.data.tags} />
+          <Tags tags={project.tags} />
         </div>
         <div class="flex flex-row justify-start gap-4">
           {/* <Button
             target="_blank"
-            href={project.data.urls.site}
+            href={project.urls.site}
             aria-label="link to project"
             style={"primary"}
             size={"sm"}
@@ -55,7 +58,7 @@ const projects = await getCollection("projects");
           </Button> */}
           <Button
             target="_blank"
-            href={project.data.urls.github}
+            href={project.urls.github}
             style={"primary"}
             size={"sm"}
             class={"flex"}
